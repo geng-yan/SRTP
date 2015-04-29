@@ -41,8 +41,8 @@ while 1:
         #print img_no,kp_no,len(kp[img_no-1])
        # print kp[img_no-1]
             count[img_no-1]=count[img_no-1]+1
-            former[img_no-1].append(tkp[x].pt)
-            latter[img_no-1].append(kp[img_no-1][0][kp_no-1].pt)
+            former[img_no-1].append(tkp[x].pt)# former数组存储的是query图中关键点的坐标
+            latter[img_no-1].append(kp[img_no-1][0][kp_no-1].pt)#latter存储的是数据库里面的图的关键点的坐标（index与former数据里面一一对应）
         x=x+1
         #print count
 
